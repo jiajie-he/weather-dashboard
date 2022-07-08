@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <section>
+        <nav>
+            <div class="nav-wrapper">
+                <form id="searchForm">
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search">
+                            <i class="material-icons">search</i>
+                        </label>
+                        <i class="material-icons">close</i>
+                        <button id="hello" class="hidden"></button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </section>
+
+
+
+    <main>
+
+        <section>
+            <ul class="collection with-header">
+                <li class="collection-header">
+                    <h4 id="cityName"></h4>
+                </li>
+                <li class="collection-item">Temp</li>
+                <li class="collection-item">Wind</li>
+                <li class="collection-item">Humidity</li>
+                <li class="collection-item">UV Index</li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="row center" id="fiveDays">
+                <!-- <div class="col s12 m4 l2">
+                    <div class="card-panel red lighten-1">
+                        <span class="white-text">placeholder
+                        </span>
+                    </div>
+                </div>
+                <div class="col s12 m4 l2">
+                    <div class="card-panel red lighten-1">
+                        <span class="white-text">placeholder
+                        </span>
+                    </div>
+                </div>
+                <div class="col s12 m4 l2">
+                    <div class="card-panel red lighten-1">
+                        <span class="white-text">placeholder
+                        </span>
+                    </div>
+                </div>
+                <div class="col s12 m4 l2">
+                    <div class="card-panel red lighten-1">
+                        <span class="white-text">placeholder
+                        </span>
+                    </div>
+                </div>
+                <div class="col s12 m4 l2">
+                    <div class="card-panel red lighten-1">
+                        <span class="white-text">placeholder
+                        </span>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

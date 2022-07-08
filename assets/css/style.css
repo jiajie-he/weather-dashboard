@@ -1,0 +1,19 @@
+:root {
+    --primary: #ee6e73;
+}
+
+h1 {
+    background-color: var(--primary);
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+
+nav {
+    margin-bottom: 25px;
+}
+
+.hidden {
+    visibility: hidden;
+}
