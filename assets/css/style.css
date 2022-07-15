@@ -17,3 +17,37 @@ nav {
 .hidden {
     visibility: hidden;
 }
+
+#today {
+    border: black solid 2px;
+    padding: 15px;
+}
+
+#cityName {
+    margin-top: 0;
+}
+
+.detail {
+    margin-top: 10px;
+    font-size: 150%;
+}
+
+.low {
+    background-color: #B7D3DF;
+}
+
+ .moderate {
+    background-color: #C4DFAA;
+ }
+
+ .high {
+    background-color: #FFE7BF;
+ }
+
+ .veryHigh {
+    background-color: #51557E;
+ }
+
+ #fiveDays {
+    font-size: 130%;
+ }

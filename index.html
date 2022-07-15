@@ -19,81 +19,50 @@
     <header>
         <h1>Weather Dashboard</h1>
     </header>
+    <main class="row">
 
-    <section>
-        <nav>
-            <div class="nav-wrapper">
-                <form id="searchForm">
-                    <div class="input-field">
-                        <input id="search" type="search" required>
-                        <label class="label-icon" for="search">
+        <section class="col s12 m12 l4">
+            <nav>
+                <div class="nav-wrapper">
+                    <form id="searchForm">
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search">
                             <i class="material-icons">search</i>
-                        </label>
-                        <i class="material-icons">close</i>
-                        <button id="hello" class="hidden"></button>
-                    </div>
-                </form>
-            </div>
-        </nav>
-    </section>
-
-
-
-    <main>
-
-        <section>
-            <ul class="collection with-header">
-                <li class="collection-header">
-                    <h4 id="cityName"></h4>
-                </li>
-                <li class="collection-item">Temp</li>
-                <li class="collection-item">Wind</li>
-                <li class="collection-item">Humidity</li>
-                <li class="collection-item">UV Index</li>
-            </ul>
+                            </label>
+                            <i class="material-icons">close</i>
+                            <button id="hello" class="hidden"></button>
+                        </div>
+                    </form>
+                </div>
+            </nav>
         </section>
 
-        <section>
-            <div class="row center" id="fiveDays">
-                <!-- <div class="col s12 m4 l2">
-                    <div class="card-panel red lighten-1">
-                        <span class="white-text">placeholder
-                        </span>
-                    </div>
+        <section class="col s12 m12 l8">
+            <div id="today">
+                <h3 id="cityName">City</h3>
+                <img id="symbol" src="" alt="">
+                <div class="detail" id="tempNow">Temp: </div>
+                <div class="detail" id="windNow">Wind: </div>
+                <div class="detail" id="humiNow">Humidity: </div>
+                <div class="detail">UV Index:
+                    <div id="uvNow"></div>
                 </div>
-                <div class="col s12 m4 l2">
-                    <div class="card-panel red lighten-1">
-                        <span class="white-text">placeholder
-                        </span>
-                    </div>
-                </div>
-                <div class="col s12 m4 l2">
-                    <div class="card-panel red lighten-1">
-                        <span class="white-text">placeholder
-                        </span>
-                    </div>
-                </div>
-                <div class="col s12 m4 l2">
-                    <div class="card-panel red lighten-1">
-                        <span class="white-text">placeholder
-                        </span>
-                    </div>
-                </div>
-                <div class="col s12 m4 l2">
-                    <div class="card-panel red lighten-1">
-                        <span class="white-text">placeholder
-                        </span>
-                    </div>
-                </div> -->
             </div>
+            <section>
+                <h4>5-Day Forcast</h4>
+                <div class="row center" id="fiveDays">
+                </div>
+            </section>
         </section>
+
 
     </main>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 
 </body>
