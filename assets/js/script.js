@@ -2,7 +2,7 @@ var searchBar = document.querySelector(`#hello`);
 var search = document.querySelector(`#search`);
 var city = document.querySelector(`#cityName`)
 
-//TODO:look up weather forcast by city name
+// look up weather forcast by city name
 //eventlisnter click
 
 searchBar.addEventListener(`click`, event => {
@@ -67,7 +67,7 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${search.value}&units=
         document.querySelector(`#symbol`).setAttribute(`src`,`https://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`)
 
     // https://openweathermap.org/img/wn/01d@2x.png
-    //TODO:display city weather
+    // display city weather
     //Manipulating the DOM
     //for loop for five cards
     for (let i = 0; i < weather.list.length; i+=8) {
