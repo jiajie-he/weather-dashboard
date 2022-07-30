@@ -1,5 +1,5 @@
 :root {
-    --primary: #ee6e73;
+    --primary: #1e88e5 ;
 }
 
 h1 {
@@ -12,6 +12,7 @@ h1 {
 
 nav {
     margin-bottom: 25px;
+    background-color: #1e88e5;
 }
 
 .hidden {
@@ -33,19 +34,19 @@ nav {
 }
 
 .low {
-    background-color: #B7D3DF;
+    background-color: #CEE5D0;
 }
 
  .moderate {
-    background-color: #C4DFAA;
+    background-color: #FFF9CA;
  }
 
  .high {
-    background-color: #FFE7BF;
+    background-color: #FEB139;
  }
 
  .veryHigh {
-    background-color: #51557E;
+    background-color: #EF9F9F;
  }
 
  #fiveDays {

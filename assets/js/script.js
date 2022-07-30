@@ -24,7 +24,7 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${search.value}&units=
     return promise.json();
 }).then(function (weather) {
     
-    city.innerHTML = weather.city.name 
+    city.innerHTML = weather.city.name
     console.log(weather)
     
     // current
@@ -56,9 +56,9 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${search.value}&units=
 
         if (data.current.uvi <= 2) {
             uvNow.setAttribute(`class`,`low`)
-        } else if (data.current.uvi <=5) {
+        } else if (data.current.uvi <= 5) {
             uvNow.setAttribute(`class`,`moderate`)
-        } else if (data.current.uvi <=7) {
+        } else if (data.current.uvi <= 7) {
             uvNow.setAttribute(`class`,`high`)
         } else {
             uvNow.setAttribute(`class`,`veryHigh`)
@@ -96,7 +96,7 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${search.value}&units=
         card.appendChild(windFive)
         card.appendChild(humFive)
         
-        card.setAttribute(`class`,`card-panel red lighten-1 white-text col s11 m11 l2`)
+        card.setAttribute(`class`,`card-panel blue darken-1 white-text col s11 m11 l2`)
         card.style.margin = `10px`
         card.style.padding = `30px`
         
