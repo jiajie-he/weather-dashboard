@@ -1,6 +1,20 @@
 var searchBar = document.querySelector(`#hello`);
 var search = document.querySelector(`#search`);
 var city = document.querySelector(`#cityName`)
+var placeholder = document.getElementById('search').getAttribute("placeholder")
+
+// default page search placeholder value
+function pageDefault() {
+    searchCity(search.value=placeholder)
+
+    function emptySearchBar(){
+        search.value = ""
+    }
+
+    emptySearchBar();
+}
+
+pageDefault();
 
 // look up weather forcast by city name
 //eventlisnter click

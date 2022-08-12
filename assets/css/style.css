@@ -20,8 +20,18 @@ nav {
 }
 
 #today {
-    border: black solid 2px;
-    padding: 15px;
+    padding: 1rem;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+      0 5px 15px 0 rgba(0,0,0,0.08);
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    
+    border-left: 0 solid var(--primary);
+    transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+}
+
+#today:hover {
+    border-left: 0.5rem solid var(--primary);
 }
 
 #cityName {
@@ -51,4 +61,10 @@ nav {
 
  #fiveDays {
     font-size: 130%;
+ }
+
+ .card-panel {
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+      0 5px 15px 0 rgba(0,0,0,0.08);
+    border-radius: 0.5rem;
  }
